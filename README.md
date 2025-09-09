@@ -1,1 +1,1 @@
-# qualisegcam.com.br
+# qualisegcam
