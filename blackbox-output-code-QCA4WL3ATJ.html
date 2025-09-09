@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Qualisegcam Monitoramento 24hs - Empresa de Monitoramento</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    .hero-bg {
+      background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/16b6a70e-387a-4b60-a4d8-25a0e1043b0a.png');
+      background-size: cover;
+      background-position: center;
+    }
+    .card-hover:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+    footer {
+      background-color: #1a202c;
+      color: white;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <header class="bg-blue-900 text-white py-4">
+    <div class="container mx-auto px-4 flex items-center justify-between">
+      <div class="flex items-center space-x-8">
+        <h1 class="text-2xl font-bold">Qualisegcam</h1>
+        <nav>
+          <ul class="flex space-x-4">
+            <li><a href="#home" class="hover:text-blue-300">Início</a></li>
+            <li><a href="#about" class="hover:text-blue-300">Sobre</a></li>
+            <li><a href="#services" class="hover:text-blue-300">Serviços</a></li>
+            <li><a href="#contact" class="hover:text-blue-300">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+      <a href="#home" class="flex-shrink-0">
+        <img
+          src="https://drive.google.com/uc?export=view&id=1C5VrF1z3C9-WAXT5eBOk1l1vYX5Ih56v"
+          alt="Logo Qualisegcam"
+          class="h-12 w-auto"
+        />
+      </a>
+    </div>
+  </header>
+
+  <div class="container mx-auto px-4 mt-6 text-center">
+    <button id="openAbout" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded">
+      Sobre a Empresa
+    </button>
+  </div>
+
+  <div id="aboutModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+    <div class="bg-white rounded-lg p-6 max-w-md mx-4 shadow-lg">
+      <h3 class="text-2xl font-bold mb-4">Sobre a Qualisegcam</h3>
+      <p>
+        A Empresa Qualisegcam fundada em 2013 tem como parceira a Empresa Anjo azul que atua diretamente nos serviços de Monitoramento de nossos clientes com profissionalismo e qualidade.
+      </p>
+      <button id="closeAbout" class="mt-6 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+        Fechar
+      </button>
+    </div>
+  </div>
+
+  <section id="home" class="hero-bg text-white py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-5xl font-bold mb-4">Qualisegcam Monitoramento 24hs</h2>
+      <p class="text-xl mb-8">Protegendo seu patrimônio com tecnologia avançada e vigilância ininterrupta.</p>
+      <div class="mb-8">
+        <img
+          src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3fc0b627-c99c-4e0f-aac1-ae6f79b54489.png"
+          alt="Vista ampla de painel de controle de monitoramento com várias telas exibindo câmeras de segurança em um escritório moderno à noite, com luzes LED azuis e alertas visuais indicando segurança ativa"
+          class="mx-auto rounded-lg shadow-lg"
+        />
+      </div>
+      <button onclick="scrollToSection('services')" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Saiba Mais</button>
+    </div>
+  </section>
+
+  <section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-8 md:mb-0">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/76d11c5e-cccc-43b8-a4fb-47aaa3d2c73b.png"
+            alt="Equipe de profissionais de segurança uniformizados em um centro de monitoramento, olhando para telas de alta definição com mapas e gráficos de dados em tempo real, ambiente iluminado e profissional"
+            class="rounded-lg shadow-lg"
+          />
+        </div>
+        <div class="md:w-1/2 md:pl-8">
+          <h3 class="text-3xl font-bold mb-4">Sobre Nós</h3>
+          <p class="text-lg mb-4">
+            A Qualisegcam é líder em soluções de monitoramento contínuo, utilizando sistemas de última geração para garantir a segurança de residências, empresas e propriedades 24 horas. Nossa equipe especializada trabalha incansavelmente para prevenir incidentes e responder rapidamente em caso de emergências.
+          </p>
+          <p class="text-lg">
+            Com anos de experiência e tecnologia de ponta, oferecemos serviços personalizados para atender às necessidades específicas de cada cliente.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="py-20 bg-gray-200">
+    <div class="container mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold mb-4">Nossos Serviços</h3>
+
+      <button id="openServicesDesc" class="mb-8 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded">
+        Descrição dos Serviços
+      </button>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow card-hover">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0ef9fd14-5a48-4ecd-9781-2cdd2618b5fd.png"
+            alt="Câmera de segurança externa montada em uma fachada de prédio comercial, capturando visão ampla de rua movimentada à noite com iluminação LED e sinais de trânsito"
+            class="mb-4 rounded"
+          />
+          <h4 class="text-xl font-bold mb-2">Monitoramento Residencial</h4>
+          <p>Vigilância completa para casas e apartamentos com câmeras de alta definição e alertas instantâneos.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow card-hover">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8b01148c-745e-465b-8abb-9a5368bd5311.png"
+            alt="Centro de controle empresarial com monitores múltiplos exibindo feeds de câmeras internas e externas, incluindo salas de reunião e corredores bem iluminados"
+            class="mb-4 rounded"
+          />
+          <h4 class="text-xl font-bold mb-2">Monitoramento Empresarial</h4>
+          <p>Soluções integradas para comercios e indústrias, protegendo ativos e assegurando continuidade operacional.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow card-hover">
+          <img
+            src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/16c1a1ad-9574-49ab-aa00-1bc110c7a485.png"
+            alt="Painel de controle remoto conectado via internet, mostrando ícones de alertas de movimento, temperatura e energia em um smartphone moderno com capa protetora"
+            class="mb-4 rounded"
+          />
+          <h4 class="text-xl font-bold mb-2">Controle Remoto</h4>
+          <p>Acesso remoto às câmeras e sistemas de alarme via aplicativo, permitindo monitoramento em tempo real de qualquer lugar.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="servicesModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+      <div class="bg-white rounded-lg p-6 max-w-md mx-4 shadow-lg text-left">
+        <h3 class="text-2xl font-bold mb-4">Descrição dos Serviços</h3>
+        <ul class="list-disc list-inside space-y-2 text-lg">
+          <li>Avisa o cliente quando o alarme não foi ativado.</li>
+          <li>Cadastro de funcionários para registrar entrada e saída.</li>
+          <li>Aplicativo para o cliente ativar e desativar o alarme.</li>
+          <li>Manutenção preventiva remotamente do sistema.</li>
+          <li>Monitoramento por câmeras.</li>
+        </ul>
+        <button id="closeServicesModal" class="mt-6 bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+          Fechar
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center mb-12">Entre em Contato</h3>
+      <p class="text-center mb-6">
+        Telefone: <a href="tel:+55119668433447" class="text-blue-600 hover:underline">11 96684-3447</a> |
+        E-mail: <a href="mailto:qualisemonitora@gmail.com" class="text-blue-600 hover:underline">qualisemonitora@gmail.com</a>,
+        <a href="mailto:qualisegcam@mail.com" class="text-blue-600 hover:underline">qualisegcam@mail.com</a>
+      </p>
+      <form action="https://formspree.io/f/seu-codigo-aqui" method="POST" class="max-w-md mx-auto">
+        <div class="mb-4">
+          <label for="name" class="block text-sm font-medium text-gray-700">Nome</label>
+          <input type="text" id="name" name="name" class="mt-1 p-2 w-full border border-gray-300 rounded-md" required />
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-sm font-medium text-gray-700">E-mail</label>
+          <input type="email" id="email" name="_replyto" class="mt-1 p-2 w-full border border-gray-300 rounded-md" required />
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-sm font-medium text-gray-700">Mensagem</label>
+          <textarea id="message" name="message" rows="4" class="mt-1 p-2 w-full border border-gray-300 rounded-md" required></textarea>
+        </div>
+        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="py-8">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2023 Qualisegcam. Todos os direitos reservados.</p>
+      <p>
+        Telefone: <a href="tel:+55119668433447" class="text-blue-400 hover:underline">11 96684-3447</a> |
+        E-mail: <a href="mailto:qualisemonitora@gmail.com" class="text-blue-400 hover:underline">qualisemonitora@gmail.com</a>,
+        <a href="mailto:qualisegcam@mail.com" class="text-blue-400 hover:underline">qualisegcam@mail.com</a>
+      </p>
+      <p>Para um domínio gratuito, hospede este site no GitHub Pages ou similar.</p>
+    </div>
+  </footer>
+
+  <script>
+    function scrollToSection(sectionId) {
+      document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Modal Sobre a Empresa
+    const openAboutBtn = document.getElementById('openAbout');
+    const closeAboutBtn = document.getElementById('closeAbout');
+    const aboutModal = document.getElementById('aboutModal');
+
+    openAboutBtn.addEventListener('click', () => {
+      aboutModal.classList.remove('hidden');
+    });
+
+    closeAboutBtn.addEventListener('click', () => {
+      aboutModal.classList.add('hidden');
+    });
+
+    aboutModal.addEventListener('click', (e) => {
+      if (e.target === aboutModal) {
+        aboutModal.classList.add('hidden');
+      }
+    });
+
+    // Modal Descrição dos Serviços
+    const openServicesBtn = document.getElementById('openServicesDesc');
+    const closeServicesBtn = document.getElementById('closeServicesModal');
+    const servicesModal = document.getElementById('servicesModal');
+
+    openServicesBtn.addEventListener('click', () => {
+      servicesModal.classList.remove('hidden');
+    });
+
+    closeServicesBtn.addEventListener('click', () => {
+      servicesModal.classList.add('hidden');
+    });
+
+    servicesModal.addEventListener('click', (e) => {
+      if (e.target === servicesModal) {
+        servicesModal.classList.add('hidden');
+      }
+    });
+  </script>
+</body>
+</html>
